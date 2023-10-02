@@ -1,3 +1,5 @@
 title = input("Enter a title: ")
 
-print(len(title))
+length = len(title)
+
+print(length)
