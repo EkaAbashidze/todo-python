@@ -1,5 +1,4 @@
-title = input("Enter a title: ")
+user_prompt = "Enter a todo: "
 
-length = len(title)
-
-print("length of the title:", length)
+while True:
+    todo = input(user_prompt)
