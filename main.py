@@ -7,7 +7,10 @@ while True:
             todo = input("Enter a todo: ")
             todos.append(todo)
         case "show":
-            print(todos)
+            for index, item in enumerate(todos):
+                print(f'{index + 1}) {item}')
             break
         case "exit":
             break
+
+print("Bye!")
