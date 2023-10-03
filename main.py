@@ -8,9 +8,10 @@ while True:
             todos.append(todo)
         case "edit":
             number = int(input("Number of the todo to edit: "))
-            editing = input(f'Enter a new text for this todo: {todos[number - 1]}')
-            todos[number - 1] = editing
-            print(todos[number - 1])
+            number = number - 1
+            editing = input(f'Enter a new text for this todo: {todos[number]} ')
+            todos[number] = editing
+            print(todos[number])
         case "show":
             for index, item in enumerate(todos):
                 item = item.title()
